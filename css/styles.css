@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.section {
+  @apply px-2 lg:px-[120px] lg:py-8;
+}
+
+@layer components {
+  .heading-2 {
+    @apply text-3xl md:text-4xl text-center mt-[50px] mb-4 font-semibold;
+  }
+
+  .heading-3 {
+    @apply text-[28px] leading-[34px] lg:text-[34px] leading-[38px] mb-4 font-normal;
+  }
+
+  .heading-4 {
+    @apply text-2xl text-[#121722];
+  }
+
+  .subhead {
+    @apply text-[22px] text-center mb-2 text-[#121722b3] leading-8 font-normal;
+  }
+
+  .subhead-2 {
+    @apply subhead text-xl;
+  }
+
+  .subhead-3 {
+    @apply text-2xl text-[#12172299];
+  }
+
+  .feat-card {
+    @apply w-full lg:w-[48%] pt-16 px-12 rounded-2xl;
+  }
+
+  .discover-card {
+    @apply bg-[#4058FF] p-8 rounded-2xl text-left text-white transition-all hover:scale-105;
+  }
+
+  .template-grid {
+    @apply grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-5 py-14 items-center justify-items-center;
+  }
+
+  .footer {
+    @apply grid grid-cols-1 md:grid-cols-4 gap-y-5 text-center md:text-left justify-items-center max-w-full my-5 md:my-20;
+  }
+}

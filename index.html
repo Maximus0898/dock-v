@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Dock</title>
+  </head>
+  <body>
+    <header
+      class="
+        fixed
+        top-0
+        w-full
+        bg-opacity-80
+        px-2
+        md:px-10
+        mx-0
+        bg-white
+        py-3
+        flex
+        justify-between
+        items-center
+        border-b border-gray-200
+      "
+    >
+      <nav class="text-black flex">
+        <a class="mr-8" href="#"><img src="images/logo.png" alt="Logo" /></a>
+        <ul class="hidden lg:flex text-black text-opacity-70">
+          <li class="mr-8">
+            <a class="font-bold text-black text-opacity-100" href="#"
+              >Why Dock</a
+            >
+          </li>
+          <li class="mr-8"><a href="#">Solutions</a></li>
+          <li class="mr-8"><a href="#">Templates</a></li>
+          <li class="mr-8"><a href="#">Library</a></li>
+        </ul>
+      </nav>
+      <div class="hidden lg:flex">
+        <button class="text-black px-4">Login</button>
+        <button
+          class="
+            text-blue-700
+            font-semibold
+            py-3
+            px-6
+            bg-blue-100
+            hover:bg-blue-200
+            rounded-full
+          "
+        >
+          Get Started
+        </button>
+      </div>
+      <button id="mobile-btn" class="lg:hidden z-20">
+        <img class="w-8" src="images/menu.svg" alt="btn" />
+      </button>
+      <div
+        id="mobile-nav"
+        class="
+          hidden
+          w-0
+          fixed
+          top-0
+          right-0
+          z-10
+          bg-indigo-50
+          h-full
+          pt-5
+          transition-all
+        "
+      >
+        <ul class="flex flex-col items-center justify-center text-black mt-12">
+          <li class="mb-3">
+            <a class="font-bold text-xl" href="#">Why Dock</a>
+          </li>
+          <li class="mb-3 text-xl"><a href="#">Solutions</a></li>
+          <li class="mb-3 text-xl"><a href="#">Templates</a></li>
+          <li class="mb-3 text-xl"><a href="#">Library</a></li>
+          <button class="pt-3 text-xl">Login</button>
+          <button
+            class="
+              mt-3
+              text-xl text-blue-700
+              font-semibold
+              py-1
+              px-4
+              bg-blue-100
+              hover:bg-blue-200
+              rounded-full
+            "
+          >
+            Get Started
+          </button>
+        </ul>
+      </div>
+    </header>
+    <main class="max-w-full flex flex-col mx-auto px-0 md:px-20 mt-10">
+      <section
+        class="
+          section
+          hero
+          py-5
+          px-8
+          lg:px-10
+          bg-white
+          flex flex-col
+          lg:flex-row lg:justify-between lg:items-center
+        "
+      >
+        <div class="hero-content w-full lg:w-[40%] text-center lg:text-left">
+          <h1
+            class="
+              text-black text-[40px]
+              md:text-[50px]
+              leading-[50px]
+              font-semibold
+              mb-6
+            "
+          >
+            The new way to manage external relationships
+          </h1>
+          <p class="text-xl mb-1 text-[#121722b3]">
+            Create shared spaces with prospects and customers
+          </p>
+          <a
+            href="#"
+            class="
+              inline-block
+              cta-primary
+              bg-[#4058FF]
+              text-white
+              rounded-full
+              px-8
+              py-3
+              mt-4
+            "
+            >Get Started</a
+          >
+        </div>
+        <img
+          class="
+            max-w-full
+            w-full
+            md:w-[900px]
+            lg:w-[690px]
+            h-auto
+            mt-[50px]
+            md:mt-0
+          "
+          src="images/hero.png"
+          alt="hero"
+        />
+      </section>
+      <section class="section customer-xp">
+        <h2 class="heading-2">
+          Transform the customer experience from demo to onboarding and beyond
+        </h2>
+        <p class="subhead">
+          Personalized spaces that make you look professional.
+        </p>
+      </section>
+      <section
+        class="
+          bg-[#4058ff]
+          text-white
+          flex flex-col
+          lg:flex-row
+          justify-between
+          items-center
+          pt-10
+          px-6
+          pb-12
+          lg:pb-20
+          mb-6
+          rounded-2xl
+        "
+      >
+        <div class="content lg:w-6/12">
+          <h2 class="heading-3">
+            Clients always know where to go when they need something
+          </h2>
+          <p class="subhead-2 text-[#E8F1FF] mb-12">
+            One destination that hosts all of your links, pdfs, meeting agendas,
+            deliverables, project timelines, proposals, and more.
+          </p>
+          <p class="subhead-2 text-[#E8F1FF] border-t border-[#4B93FF] pt-4">
+            Embed your favorite software from Figma to Google Slides to Vimeo.
+          </p>
+          <img
+            class="mx-auto lg:mx-5 mb-5 lg:mb-0"
+            src="./images/platforms.svg"
+            alt="platforms"
+          />
+        </div>
+        <img
+          class="w-full lg:w-6/12 rounded px-3"
+          src="./images/customers.webp"
+          alt="works"
+        />
+      </section>
+
+      <section
+        class="
+          bg-[#F1F5FF80]
+          flex flex-col
+          lg:flex-row
+          justify-between
+          items-center
+          pt-10
+          px-6
+          pb-12
+          lg:pb-20
+          mb-6
+          rounded-2xl
+        "
+      >
+        <img
+          class="w-full lg:w-3/5 rounded px-3"
+          src="./images/sheets.webp"
+          alt="Google Sheets"
+        />
+        <div class="content w-full lg:w-2/5 px-4">
+          <h2 class="heading-3 font-normal text-center md:text-left pt-4">
+            Navigate complex deals and onboard customers
+          </h2>
+          <p class="subhead-2 mb-4 text-center md:text-left">
+            Stop using that spreadsheet. Instead, build a collaborative mutual
+            action plan with customers - share status, align due dates, assign
+            tasks, leave comments and upload files.
+          </p>
+        </div>
+      </section>
+      <section class="features flex flex-col lg:flex-row justify-between">
+        <div class="feat-card bg-[#FFF4F580] mb-4 lg:mb-0">
+          <h4 class="heading-4">Personalization at scale.</h4>
+          <p class="subhead-3">Create branded spaces with custom content.</p>
+          <img class="mt-10" src="./images/person.svg" alt="Personalization" />
+        </div>
+        <div class="feat-card bg-[#FFF4F580]">
+          <h4 class="heading-4">Share feedback & move projects along.</h4>
+          <p class="subhead-3">
+            Customers comment on what you’re working on and share key resources
+            with file uploads.
+          </p>
+          <img class="mt-10" src="./images/feedback.svg" alt="feedback" />
+        </div>
+      </section>
+
+      <section class="section customer-xp">
+        <h2 class="heading-2">Uplevel how Sales and Customer teams work</h2>
+        <p class="subhead">
+          Dock helps leadership build a repeatable sales and customer success
+          process.
+        </p>
+      </section>
+
+      <section
+        class="
+          how-works
+          bg-[#121722]
+          flex flex-col
+          lg:flex-row
+          justify-between
+          items-center
+          px-6
+          py-20
+          rounded-2xl
+        "
+      >
+        <div class="content w-full lg:w-[40%] pt-10">
+          <h2 class="heading-3 text-white text-center lg:text-left">
+            Understand what content performs
+          </h2>
+          <p
+            class="
+              subhead-2
+              text-[#B9C0D5] text-center
+              lg:text-left
+              mb-5
+              lg:mb-0
+            "
+          >
+            Get insight into when clients view the shared space and what they
+            clicked on.
+          </p>
+        </div>
+        <img
+          class="w-full lg:w-3/5"
+          src="./images/content.webp"
+          alt="Understand content"
+        />
+      </section>
+      <section class="features flex flex-col lg:flex-row justify-between my-10">
+        <div class="feat-card bg-[#F1F5FF80] mb-4 lg:mb-0">
+          <h4 class="heading-4">Save Time.</h4>
+          <p class="subhead-3">
+            Duplicate work from project to project, so you’re not starting from
+            scratch every time.
+          </p>
+          <img class="mt-10" src="./images/time.svg" alt="Time management" />
+        </div>
+        <div class="feat-card bg-[#F1F5FF80]">
+          <h4 class="heading-4">Move the relationship forward.</h4>
+          <p class="subhead-3">
+            Notifications give visibility into how the project is moving along.
+          </p>
+          <img class="mt-10" src="./images/forward.svg" alt="relationships" />
+        </div>
+      </section>
+
+      <section
+        class="
+          grid
+          lg:grid-cols-3
+          gap-8
+          bg-[#F1F5FF80]
+          mb-6
+          rounded-2xl
+          p-5
+          xl:p-20
+        "
+      >
+        <div class="content px-4">
+          <h2 class="heading-3 font-normal text-center md:text-left pt-4">
+            Discover how Sales and Customer teams use Dock everyday
+          </h2>
+          <p class="subhead-2 mb-4 text-center md:text-left">
+            Dock helps companies across the customer lifecycle.
+          </p>
+        </div>
+        <div class="discover-card">
+          <img class="mb-8" src="./images/transform.svg" alt="Transform" />
+          <p class="text-xs uppercase">Sales</p>
+          <h4 class="mt-1 mb-3 text-[32px] leading-9">
+            Transform the sales experience
+          </h4>
+          <p class="mb-4">
+            Dock makes it easy for prospects to buy and helps sales teams build
+            a repeatable process.
+          </p>
+          <a href="#">Learn more &rarr;</a>
+        </div>
+        <div class="discover-card">
+          <img class="mb-8" src="./images/build.svg" alt="Transform" />
+          <p class="text-xs uppercase">Customer Success</p>
+          <h4 class="mt-1 mb-3 text-[32px] leading-9">
+            Build strong relationships with customers
+          </h4>
+          <p class="mb-4">
+            Dock helps companies onboard customers and manage ongoing
+            relationships.
+          </p>
+          <a href="#">Learn more &rarr;</a>
+        </div>
+      </section>
+      <section class="section templates text-center">
+        <h2 class="heading-2">Explore Dock templates</h2>
+        <p class="subhead">
+          Explore templates for sales, customer success, and agencies. <br />
+          Customize any template and share with clients.
+        </p>
+        <button
+          class="
+            text-blue-700
+            font-semibold
+            py-3
+            px-6
+            bg-blue-100
+            hover:bg-blue-200
+            rounded-full
+          "
+        >
+          Explore templates &rarr;
+        </button>
+        <div class="template-grid text-left">
+          <div class="template-card">
+            <img src="./images/template-1.png" alt="template" />
+            <p class="text-xs opacity-40 uppercase mt-2">Sales</p>
+            <p class="text-xl">Demo Follow Up</p>
+          </div>
+          <div class="template-card">
+            <img src="./images/template-2.png" alt="template" />
+            <p class="text-xs opacity-40 uppercase mt-2">Sales</p>
+            <p class="text-xl">Enterprise Sales</p>
+          </div>
+          <div class="template-card">
+            <img src="./images/template-3.png" alt="template" />
+            <p class="text-xs opacity-40 uppercase mt-2">Agency</p>
+            <p class="text-xl">Design Proposal</p>
+          </div>
+          <div class="template-card">
+            <img src="./images/template-4.png" alt="template" />
+            <p class="text-xs opacity-40 uppercase mt-2">Agemcy</p>
+            <p class="text-xl">Website Proposal</p>
+          </div>
+          <div class="template-card">
+            <img src="./images/template-5.png" alt="template" />
+            <p class="text-xs opacity-40 uppercase mt-2">Agency</p>
+            <p class="text-xl">Brand Design Project</p>
+          </div>
+          <div class="template-card">
+            <img src="./images/template-6.png" alt="template" />
+            <p class="text-xs opacity-40 uppercase mt-2">Customer Success</p>
+            <p class="text-xl">Implementation Plan</p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="bg-[#4058ff] text-white py-28 mb-6 rounded-2xl text-center"
+      >
+        <h4 class="heading-2">Get started with Dock</h4>
+        <button
+          class="
+            text-blue-700
+            font-semibold
+            py-3
+            px-6
+            bg-white
+            hover:bg-blue-200
+            rounded-full
+          "
+        >
+          Get Started
+        </button>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="copy">
+        <img class="mx-auto md:mx-0" src="./images/logo.png" alt="logo" />
+        <p class="text-xs opacity-60 mt-2">
+          Copyright © 2021 Dock Labs, Inc. <br />All rights reserved.
+        </p>
+      </div>
+      <ul>
+        <li class="mb-2"><a href="#">Legal</a></li>
+        <li class="mb-2"><a href="#">Terms of Service</a></li>
+        <li class="mb-2"><a href="#">Privacy Policy</a></li>
+        <li class="mb-2"><a href="#">Privacy Request</a></li>
+      </ul>
+      <ul>
+        <li class="mb-2">
+          <a href="#">Support</a>
+        </li>
+        <li class="mb-2"><a href="#">Help Center</a></li>
+        <li class="mb-2">
+          <a href="mailto:support@dock.us">support@dock.us</a>
+        </li>
+      </ul>
+      <ul>
+        <li class="mb-2"><a href="#">General</a></li>
+        <li class="mb-2"><a href="#">Request Invite</a></li>
+        <li class="mb-2"><a href="#">Twitter</a></li>
+      </ul>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
